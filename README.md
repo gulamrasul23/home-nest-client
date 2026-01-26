@@ -1,16 +1,39 @@
-# React + Vite
+# HomeNest - Real Estate Listing Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+HomeNest is a user-centric real estate platform designed to connect property owners with potential renters and buyers. It allows users to browse a wide range of properties including rentals, sales, commercial spaces, and land. The platform features a secure environment for property owners to manage their listings and for users to review and rate properties.
 
-Currently, two official plugins are available:
+## Live Links
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Live Site:** [(https://home-nest-a30ed.web.app/)]
 
-## React Compiler
+## Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Here are the main functionalities of HomeNest:
 
-## Expanding the ESLint configuration
+- **Dynamic Property Management:** Authenticated users can easily add new property listings with details (image, price, location) and manage them via a private "My Properties" dashboard where they can update or delete listings.
+- **Advanced Authentication System:** Secure Email/Password login and registration with strict password validation (uppercase, lowercase, length). Includes **Google Social Login** for quick access.
+- **Private & Protected Routes:** Critical actions like adding properties, viewing "My Properties," "My Ratings," and checking property details are protected, ensuring only logged-in users can access them.
+- **Sorting & Browsing:** An "All Properties" page allows users to view all listings with backend-implemented sorting functionality (e.g., by Price or Posted Date) to find the best deals easily.
+- **Review & Rating System:** Users can leave star ratings (1-5) and written reviews on property detail pages. Users also have a dedicated "My Ratings" page to view their submitted feedback.
+- **Interactive UI/UX:**
+  - **Dark/Light Mode:** Toggle available for better user experience.
+  - **Visual Feedback:** SweetAlert/Toast notifications for CRUD operations and authentication errors.
+  - **Loading States:** Spinners displayed during data fetching.
+  - **Dynamic Home Page:** Features a slider, "Why Choose Us" section, and the latest 6 properties sorted by date.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies Used
+
+- **Frontend:** React.js, Tailwind CSS / DaisyUI
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+- **Authentication:** Firebase Auth
+- **Routing:** React Router
+- **Notifications:** SweetAlert2
+
+## NPM Packages Used
+
+- `react-router`
+- `firebase`
+- `swiper` (for sliders)
+- `sweetalert2`
+- `font-awesome`
