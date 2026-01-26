@@ -3,7 +3,8 @@ import { Link } from "react-router";
 const ErrorPage = () => {
   return (
     <div className="flex flex-col gap-4 justify-center items-center px-6 py-[40px]">
-      <div className="w-[70%]">
+      <title>Error-404</title>
+      <div className="w-[70%] flex justify-center">
         <img src="/image/error-404.png" />
       </div>
       <div className="pt-4">

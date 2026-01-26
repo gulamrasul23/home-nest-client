@@ -30,7 +30,7 @@ const Home = () => {
 
   return (
     <div className="bg-base-100 text-base-content">
-      <title>HouseNest- Home</title>
+      <title>HomeNest- Home</title>
 
       <section className="w-full pt-16 sm:h-[450px]  md:h-[596px] relative">
         <Swiper

@@ -79,6 +79,7 @@ const PropertyDetails = () => {
 
   return (
     <div className="bg-base-100 py-16 max-w-7xl mx-auto px-6 md:px-12">
+      <title>HomeNest- Property Details</title>
       <div className=" py-2 sm:py-4">
         <h1 className="text-3xl md:text-5xl font-extrabold sm:mb-2 sm:leading-tight">
           {property.propertyName}

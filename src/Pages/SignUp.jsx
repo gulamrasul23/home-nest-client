@@ -94,7 +94,7 @@ const SignUp = () => {
 
   return (
     <div className="p-16 flex flex-col justify-center items-center">
-      <title>HouseNest- Sign Up</title>
+      <title>HomeNest- Sign Up</title>
       <div className="md:w-[320px]">
         <form onSubmit={handleSignUp} className="my-4">
           <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-[280px] sm:w-xs border p-4">

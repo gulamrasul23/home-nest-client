@@ -124,6 +124,16 @@ const Navbar = () => {
               All Properties
             </NavLink>
           </li>{" "}
+          <li onClick={() => setDropdownOpen(false)}>
+              <NavLink
+                to="/addProperty"
+                className={({ isActive }) =>
+                  `hover:bg-base-content/10 ${isActive ? "underline decoration-2 underline-offset-3 text-blue-500" : " bg-base-100"}`
+                }
+              >
+                Add Property
+              </NavLink>
+            </li>{" "}
         </>
       )}
     </>

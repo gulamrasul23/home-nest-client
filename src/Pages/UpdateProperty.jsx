@@ -70,6 +70,7 @@ const UpdateProperty = ({ selectedProperty, setIsModalOpen }) => {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm sm:p-4 overflow-y-auto">
+      <title>HomeNest- Update Property</title>
       <div className="bg-base-100 w-[300px] sm:w-full sm:max-w-2xl rounded-2xl shadow-2xl relative  overflow-hidden max-h-[90vh] md:max-h-auto ">
         <button
           onClick={() => setIsModalOpen(false)}
