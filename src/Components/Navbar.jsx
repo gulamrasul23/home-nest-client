@@ -125,15 +125,15 @@ const Navbar = () => {
             </NavLink>
           </li>{" "}
           <li onClick={() => setDropdownOpen(false)}>
-              <NavLink
-                to="/addProperty"
-                className={({ isActive }) =>
-                  `hover:bg-base-content/10 ${isActive ? "underline decoration-2 underline-offset-3 text-blue-500" : " bg-base-100"}`
-                }
-              >
-                Add Property
-              </NavLink>
-            </li>{" "}
+            <NavLink
+              to="/addProperty"
+              className={({ isActive }) =>
+                `hover:bg-base-content/10 ${isActive ? "underline decoration-2 underline-offset-3 text-blue-500" : " bg-base-100"}`
+              }
+            >
+              Add Property
+            </NavLink>
+          </li>{" "}
         </>
       )}
     </>
@@ -193,7 +193,7 @@ const Navbar = () => {
               >
                 <Link
                   to="/"
-                  className="tooltip tooltip-bottom cursor-pointer"
+                  className="cursor-pointer"
                   data-tip={user.displayName}
                 >
                   {user?.photoURL ? (
