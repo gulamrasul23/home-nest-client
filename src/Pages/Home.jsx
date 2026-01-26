@@ -10,9 +10,9 @@ import { use } from "react";
 import { useLoaderData } from "react-router";
 import { AuthContext } from "../Context/AuthContext";
 
-const slidePromise = fetch("http://localhost:3000/banner_slide").then((res) =>
-  res.json(),
-);
+const slidePromise = fetch(
+  "https://home-nest-server.vercel.app/banner_slide",
+).then((res) => res.json());
 
 const Home = () => {
   const { loading } = use(AuthContext);
@@ -43,7 +43,10 @@ const Home = () => {
             disableOnInteraction: false,
           }}
           pagination={{ clickable: true }}
-          navigation={false}
+          navigation={true}
+          style={{
+            "--swiper-navigation-size": "20px",
+          }}
           className="mySwiper w-full h-full"
         >
           {slides.map((slide) => (

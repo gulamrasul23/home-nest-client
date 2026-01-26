@@ -15,7 +15,7 @@ const PropertyDetails = () => {
   const [refetch, setRefetch] = useState(false);
 
   useEffect(() => {
-    fetch(`http://localhost:3000/ratings/${property._id}`)
+    fetch(`https://home-nest-server.vercel.app/ratings/${property._id}`)
       .then((res) => res.json())
       .then((data) => {
         setReviews(data);
@@ -43,7 +43,7 @@ const PropertyDetails = () => {
       rating: rating,
     };
 
-    fetch("http://localhost:3000/ratings", {
+    fetch("https://home-nest-server.vercel.app/ratings", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

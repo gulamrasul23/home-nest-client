@@ -34,7 +34,7 @@ const UpdateProperty = ({ selectedProperty, setIsModalOpen }) => {
 
     try {
       const res = await fetch(
-        `http://localhost:3000/properties/${selectedProperty._id}`,
+        `https://home-nest-server.vercel.app/properties/${selectedProperty._id}`,
         {
           method: "PATCH",
           headers: {

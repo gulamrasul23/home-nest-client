@@ -34,7 +34,7 @@ const AddProperty = () => {
       ownerPhotoUrl,
     };
 
-    await fetch("http://localhost:3000/properties", {
+    await fetch("https://home-nest-server.vercel.app/properties", {
       method: "POST",
       headers: {
         "content-type": "application/json",

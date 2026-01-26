@@ -21,7 +21,9 @@ const router = createBrowserRouter([
         index: true,
         element: <Home></Home>,
         loader: async () => {
-          const res = await fetch("http://localhost:3000/properties?limit=6");
+          const res = await fetch(
+            "https://home-nest-server.vercel.app/properties?limit=6",
+          );
           return res.json();
         },
         hydrateFallbackElement: (
@@ -46,7 +48,9 @@ const router = createBrowserRouter([
         path: "allProperties",
         element: <AllProperties></AllProperties>,
         loader: async () => {
-          const res = await fetch("http://localhost:3000/properties");
+          const res = await fetch(
+            "https://home-nest-server.vercel.app/properties",
+          );
           return res.json();
         },
         hydrateFallbackElement: (
@@ -72,7 +76,7 @@ const router = createBrowserRouter([
         ),
         loader: async ({ params }) => {
           const res = await fetch(
-            `http://localhost:3000/properties/${params.id}`,
+            `https://home-nest-server.vercel.app/properties/${params.id}`,
           );
           return res.json();
         },
@@ -107,7 +111,7 @@ const router = createBrowserRouter([
         ),
         loader: async ({ params }) => {
           const res = await fetch(
-            `http://localhost:3000/properties/${params.id}`,
+            `https://home-nest-server.vercel.app/properties/${params.id}`,
           );
           return res.json();
         },
