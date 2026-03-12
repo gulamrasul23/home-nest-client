@@ -91,7 +91,7 @@ npm run dev
 ## Folder Structure
 
 ```plaintext
-your-project/
+home-nest-client/
 │
 ├── src/
 │   ├── components/
