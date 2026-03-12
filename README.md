@@ -110,5 +110,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 ## Contact
 
 **Live URL:** [Live Site](https://home-nest-a30ed.web.app/)
+<br>
 **Email:** [username](gulamrasulrahim23@gmail.com)
+<br>
 **Portfolio:** [Portfolio](https://github.com/gulamrasul23)
